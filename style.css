@@ -1652,7 +1652,7 @@ input:required {
 /*# sourceMappingURL=style.css.map */
 
 .modal {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: none;
   position: fixed;
   z-index: 1;

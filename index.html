@@ -63,107 +63,25 @@
                 </div>
             </div>
 
-            <div class="row alime-portfolio">
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item props mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Works/prop1.jpg" alt="Lanscape">
-                        <div class="hover-content">
-                            <a href="img/Works/prop1.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="gallery image-container">
+                <img class="gallery-img" src="img/Lighting/Car.jpg" alt="Car">
+                <img class="gallery-img" src="img/Lighting/Bedroom.jpg" alt="">
+                <img class="gallery-img" src="img/Lighting/Kitchen.jpg" alt="">
+                <img class="gallery-img" src="img/Lighting/FilmNoir.jpg" alt="">
+                <img class="gallery-img" src="img/Lighting/L3.jpg" alt="">
+                <img class="gallery-img" src="img/Lighting/Art Room.jpg" alt="">
+                <img class="gallery-img" src="img/Lighting/Kings Treasure.jpg" alt="">
+                <img class="gallery-img" src="img/Lighting/Carnival.jpg" alt="">
+                <img class="gallery-img" src="img/Works/prop1.jpg" alt="Lanscape">
+                <img class="gallery-img" src="img/Works/prop2.jpg" alt="Lanscape">
+                <img class="gallery-img" src="img/Works/double exposure.jpg" alt="">
+            </div>
 
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/Car.jpg" alt="Car">
-                        <div class="hover-content">
-                            <a href="img/Lighting/Car.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item others mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Works/double exposure.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Works/double exposure.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/Bedroom.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Lighting/Bedroom.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item props mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Works/prop2.jpg" alt="Lanscape">
-                        <div class="hover-content">
-                            <a href="img/Works/prop2.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/Kitchen.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Lighting/Kitchen.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/FilmNoir.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Lighting/FilmNoir.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/L3.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Lighting/L3.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/Art Room.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Lighting/Art Room.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item lighting mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/Lighting/Kings Treasure.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/Lighting/Kings Treasure.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <button class="nav-button" id="prev">&lt;</button>
+                <button class="nav-button" id="next">&gt;</button>
             </div>
 
             <div class="row">
@@ -192,9 +110,7 @@
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/alime.bundle.js"></script>
-    <!-- Active -->
+    <script src="js//main.js"></script>
     <script src="js/default-assets/active.js"></script>
 
 </body>
