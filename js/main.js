@@ -11,6 +11,20 @@ images.forEach((img, index) => {
     }
 });
 
+function sortSelection(filter) {
+    images.forEach((img) => {
+        const type = img.className.split(" ");
+        const imgName = type[1];
+        if (filter === "*") {
+            $("." + imgName).show();
+        } else if (imgName === filter) {
+            $("." + imgName).show();
+        } else {
+            $("." + imgName).hide();
+        }
+    })
+};
+
 const closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
     modal.style.display = "none";

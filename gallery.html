@@ -56,12 +56,12 @@
                     <!-- Projects Menu -->
                     <div class="alime-projects-menu">
                         <div class="portfolio-menu text-center">
-                            <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".lighting">Lighting</button>
-                            <button class="btn" data-filter=".props">Prop Study</button>
-                            <button class="btn" data-filter=".country">Environment Design</button>
-                            <button class="btn" data-filter=".video">Video</button>
-                            <button class="btn" data-filter=".others">Others</button>
+                            <button onclick="sortSelection(this.id)" class="btn active" id="*">All</button>
+                            <button onclick="sortSelection(this.id)" class="btn" id="lighting">Lighting</button>
+                            <button onclick="sortSelection(this.id)" class="btn" id="props">Prop Study</button>
+                            <button onclick="sortSelection(this.id)" class="btn" id="envdesign">Environment Design</button>
+                            <button onclick="sortSelection(this.id)" class="btn" id="video">Video</button>
+                            <button onclick="sortSelection(this.id)" class="btn" id="others">Others</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                 <img class="gallery-img props" src="img/Works/prop1.jpg" alt="Lanscape">
                 <img class="gallery-img props" src="img/Works/prop2.jpg" alt="Lanscape">
                 <img class="gallery-img others" src="img/Works/double exposure.jpg" alt="">
-                <video class="video" width="240" height="240" controls>
+                <video class="gallery-img video" width="240" height="240" controls>
                     <source src="img/Works/motion-graphics.mp4" type="video/mp4">
                 </video>
             </div>
@@ -119,6 +119,12 @@
             $("#includeFooter").load("/footer.html"); 
         });
     </script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
     <script src="js//main.js"></script>
