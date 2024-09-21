@@ -6,6 +6,7 @@ let currentIndex;
 images.forEach((img, index) => {
     img.onclick = function() {
         modal.style.display = "block";
+        modal.style.alignContent = "center";
         modalImg.src = this.src;
         currentIndex = index;
     }
