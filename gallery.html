@@ -75,9 +75,9 @@
                 <img class="gallery-img lighting" src="img/Lighting/Kitchen.jpg" alt="">
                 <img class="gallery-img others" src="img/Works/3dcity1.png" alt="Lanscape">
                 <img class="gallery-img lighting" src="img/Lighting/FilmNoir.jpg" alt="">
-                <img class="gallery-img others" src="img/Works/3dcity2.png" alt="Lanscape">
+                <img class="gallery-img others" src="img/Works/aurora.png" alt="Lanscape">
                 <img class="gallery-img lighting" src="img/Lighting/L3.jpg" alt="">
-                <img class="gallery-img others" src="img/Works/saladposter.jpg" alt="Lanscape">
+                <img class="gallery-img others" src="img/Works/goblin.png" alt="Lanscape">
                 <img class="gallery-img lighting" src="img/Lighting/Art Room.jpg" alt="">
                 <img class="gallery-img others" src="img/Works/ice-cream-poster.jpg" alt="Lanscape">
                 <img class="gallery-img lighting" src="img/Lighting/Fruit Plate.jpg" alt="">
@@ -116,6 +116,17 @@
                 <button class="nav-button" id="prev">&lt;</button>
                 <button class="nav-button" id="next">&gt;</button>
             </div>
+
+            <div class="view-more">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
+                    <a href="./lighting.html" class="lighting btn alime-btn btn-2 mt-15">View More</a>
+                    <a href="./3dmodelling.html" class="3dmodel btn alime-btn btn-2 mt-15">View More</a>
+                    <a href="./propstudy.html" class="props btn alime-btn btn-2 mt-15">View More</a>
+                    <a href="./envdesign.html" class="envdesign btn alime-btn btn-2 mt-15">View More</a>
+                    <a href="./misc.html" class="others btn alime-btn btn-2 mt-15">View More</a>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- Gallery Area End -->
@@ -131,6 +142,7 @@
         $(function(){
             $("#includeNavbar").load("/navbar.html"); 
             $("#includeFooter").load("/footer.html"); 
+            $(".view-more").hide();
         });
     </script>
     <!-- Popper -->
