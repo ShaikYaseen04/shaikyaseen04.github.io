@@ -18,8 +18,10 @@ function sortSelection(filter) {
         const imgName = type[1];
         if (filter === "*") {
             $("." + imgName).show();
+            $(".view-more").hide();
         } else if (imgName === filter) {
             $("." + imgName).show();
+            $(".view-more").show();
         } else {
             $("." + imgName).hide();
         }
